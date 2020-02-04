@@ -9,10 +9,15 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 function ComenzarIngreso () 
 {
- 	
+    while (isNaN(num)|| num < 1){
+        num = prompt("ingrese un numero");
+        num = parseInt(num);
+        
+}
 }
 function NumerosPares () 
 {
+    ComenzarIngreso();
     var cantpares = 2;
     var num = document.getElementById("numero").value;
     num =parseInt(num);
@@ -20,11 +25,7 @@ function NumerosPares ()
 
     
   
-    while (isNaN(num)|| num < 1){
-        num = prompt("ingrese un numero");
-        num = parseInt(num);
-        document.write("numero introducido " + num + "<br >");
-    }
+    
     
     
     while (cantpares < num)
@@ -38,16 +39,12 @@ function NumerosPares ()
 }
 function NumerosImpares () 
 {
+    ComenzarIngreso();
     var cantimpares = 1;
     var num = document.getElementById("numero").value;
     num =parseInt(num);
 
-    while (isNaN(num)|| num < 1){
-        num = prompt("ingrese un numero");
-        num = parseInt(num);
-        document.write("numero introducido " + num + "<br >");
-    }
-    
+
     while (cantimpares <= num)
         {
             document.write( + cantimpares + "<br >");
@@ -59,23 +56,22 @@ function NumerosImpares ()
 }
 function NumerosDivisibles () 
 {
-    var cantdiv = 1;
-    var contdiv = 0;
-    var num = document.getElementById("numero").value;
-    num = parseInt;
-    
-    while (cantimpares <= 100)
+    ComenzarIngreso();
+
+    var contador = 1;
+    var cantidadDivisibles;
+    while (cantimpares <= 101)
     {
-        document.write( + contdiv + "<br >");
-        contdiv++;
-     if (num/cantdiv==0) {
-         
+     if (num/contador==0) {
+        cantidadDivisibles++;
      }
+     contador++;
     }
-    document.write("pares " + contdiv + "<br >");
+
 }
 function VerificarPrimos () 
 {
+    
     var cantidadprimos
     var verifprimos = 2
     var respuesta = true;
