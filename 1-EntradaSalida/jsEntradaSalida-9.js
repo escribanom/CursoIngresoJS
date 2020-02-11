@@ -12,7 +12,7 @@ function mostrarAumento()
     
     num1 = parseInt (num1);
     
-    num2 = (num1 *1.1 );
+    num2 = (num1 * 1.1 );
 
     document.getElementById("resultado").value = num2;
 }
