@@ -6,24 +6,57 @@ a su opción  y le informaremos si ganó, empató o perdió.
 */
 var eleccionMaquina;
 
+var max
+
+var min
+
 function comenzar()
 {
-	
+eleccionMaquina = Math.floor (Math.random ()*(max-min)) + min;
 
+min = 1
+
+max = 4
 
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-	
+	if (eleccionMaquina == 1) {
+        alert("empata")
+        
+    }else{
+        if (eleccionMaquina == 2) {
+            alert("pierde")
+            
+        }else{
+            alert("gana")
+        }
+    }
 
 }//FIN DE LA FUNCIÓN
 function papel()
 {
+    if (eleccionMaquina == 1) {
+    alert("gana")
+    
+}else{
+    if (eleccionMaquina == 2) {
+        alert("empata")
+        
+    }else{
+        alert("pierde")}
 
 
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-	
-
-}//FIN DE LA FUNCIÓN
+	if (eleccionMaquina == 1) {
+        alert("pierde")
+        
+    }else{
+        if (eleccionMaquina == 2) {
+            alert("gana")
+            
+        }else{
+            alert("empata")}
+}   }    }
