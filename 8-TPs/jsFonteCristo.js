@@ -11,3 +11,23 @@ function ComenzarIngreso ()
 {
  	
 }
+function NumerosPares () 
+{
+ 	
+}
+function NumerosImpares () 
+{
+ 	
+}
+function ComenzarIngreso () 
+{
+ 	
+}
+function ComenzarIngreso () 
+{
+ 	
+}
+function ComenzarIngreso () 
+{
+ 	
+}
