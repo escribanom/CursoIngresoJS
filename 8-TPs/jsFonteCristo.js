@@ -13,21 +13,92 @@ function ComenzarIngreso ()
 }
 function NumerosPares () 
 {
- 	
+    var cantpares = 2;
+    var num = parseInt(document.getElementById("numero").value);
+   
+    document.write("numero introducido " + num );
+  
+    while (cantpares <= num)
+        {
+            document.write( + cantpares + "<br >");
+            cantpares+=2;
+
+        }
+    
+    
 }
 function NumerosImpares () 
 {
- 	
+    var cantimpares = 1;
+    var num = parseInt(document.getElementById("numero").value);
+    document.write("numero introducido " + num );
+    
+    while (cantimpares <= num)
+        {
+            document.write( + cantimpares + "<br >");
+            cantimpares+=2;
+         
+        }
+    
+    
 }
-function ComenzarIngreso () 
+function NumerosDivisibles () 
 {
- 	
+    var cantpares = 0;
+    var respuesta = true;
+    var num = document.getElementById("numero").value;
+    num = parseInt;
+    do {
+        if (cantpares % 2 == 0) {
+        }
+        cantpares++;
+    } while (cantpares<=num);
+    
+    document.write("pares " + cantpares + "<br >");
 }
-function ComenzarIngreso () 
+function VerificarPrimos () 
 {
- 	
+    var cantidadprimos
+    var verifprimos = 2
+    var respuesta = true;
+    var num = document.getElementById("numero").value;
+    num = parseInt;
+
+    do {
+        if (num && verifprimos === 0) {
+            
+            respuesta == false;
+        }else{
+            if (respuesta == true) {
+                cantidadprimos++;
+            }
+        }
+        
+    } while (verifprimos < num);
+    
+   
+    document.write(" verificar primos " + cantidadprimos + "<br >");
+    
 }
-function ComenzarIngreso () 
+function Primos () 
 {
- 	
-}
+    var cantidadprimos = 0;
+    var cantprimos = 2
+    var respuesta = true;
+    var num = document.getElementById("numero").value;
+    num = parseInt;
+    
+    do {
+        if (num && cantprimos === 0) {
+            
+            respuesta == false;
+        }else{
+            if (respuesta== true) {
+                cantidadprimos++;
+            }
+        }
+        
+    } while (verifprimos < num);
+
+        document.write("primos " + cantidadprimos + "<br >");
+}    
