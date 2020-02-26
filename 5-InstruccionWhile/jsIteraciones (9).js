@@ -9,10 +9,32 @@ function mostrar()
     var pv;
 	while(respuesta)
 	{
+		do {
+			num = prompt("ingrese un numero valido.");
+			
+			num = parseInt(num);
+		} while (isNaN(num));
+	 
+		if (pv) {
+			pv = false;
+			min =num;
+			max= num;
+		}else{
+			if (num < min) {
+				min = num;
+			}
+		if (num > min) {
+			min = num;
+		}
 		
-	 var num = prompt("ingrese un numero.");
+        }
+		respuesta = confirm("desea continuar");
+		
+		
+		
+		/*var num = prompt("ingrese un numero.");
      num= parseInt;
-		 while (isNaN(num)) {
+		while (isNaN(num)) {
 			
 		
 		  num = prompt("ingrese un numero valido.");
@@ -33,7 +55,8 @@ function mostrar()
 				}	}
         }
 		respuesta = confirm("desea continuar");
-	}
+	}*/
+
 
  document.getElementById("maximo").value=max
  document.getElementById("minimo").value=min

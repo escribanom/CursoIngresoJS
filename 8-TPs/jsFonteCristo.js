@@ -14,11 +14,20 @@ function ComenzarIngreso ()
 function NumerosPares () 
 {
     var cantpares = 2;
-    var num = parseInt(document.getElementById("numero").value);
-   
-    document.write("numero introducido " + num );
+    var num = document.getElementById("numero").value;
+    num =parseInt(num);
+
+
+    
   
-    while (cantpares <= num)
+    while (isNaN(num)|| num < 1){
+        num = prompt("ingrese un numero");
+        num = parseInt(num);
+        document.write("numero introducido " + num + "<br >");
+    }
+    
+    
+    while (cantpares < num)
         {
             document.write( + cantpares + "<br >");
             cantpares+=2;
@@ -30,8 +39,14 @@ function NumerosPares ()
 function NumerosImpares () 
 {
     var cantimpares = 1;
-    var num = parseInt(document.getElementById("numero").value);
-    document.write("numero introducido " + num );
+    var num = document.getElementById("numero").value;
+    num =parseInt(num);
+
+    while (isNaN(num)|| num < 1){
+        num = prompt("ingrese un numero");
+        num = parseInt(num);
+        document.write("numero introducido " + num + "<br >");
+    }
     
     while (cantimpares <= num)
         {
@@ -44,17 +59,20 @@ function NumerosImpares ()
 }
 function NumerosDivisibles () 
 {
-    var cantpares = 0;
-    var respuesta = true;
+    var cantdiv = 1;
+    var contdiv = 0;
     var num = document.getElementById("numero").value;
     num = parseInt;
-    do {
-        if (cantpares % 2 == 0) {
-        }
-        cantpares++;
-    } while (cantpares<=num);
     
-    document.write("pares " + cantpares + "<br >");
+    while (cantimpares <= 100)
+    {
+        document.write( + contdiv + "<br >");
+        contdiv++;
+     if (num/cantdiv==0) {
+         
+     }
+    }
+    document.write("pares " + contdiv + "<br >");
 }
 function VerificarPrimos () 
 {
